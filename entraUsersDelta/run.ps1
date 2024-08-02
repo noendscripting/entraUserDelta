@@ -1,7 +1,7 @@
 # Input bindings are passed in via param block.
        
 param($Timer)
-Connect-MgGraph -Identity -Debug
+Connect-MgGraph -Identity
 
 #Connect-AzAccount -Identity -Environment 'AzureCloud' 
 
