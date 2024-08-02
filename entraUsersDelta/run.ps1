@@ -1,13 +1,13 @@
 # Input bindings are passed in via param block.
        
 param($Timer)
-Connect-MgGraph -Identity
+#Connect-MgGraph -Identity
 
 #Connect-AzAccount -Identity -Environment 'AzureCloud' 
 
 #$AccessToken = ConvertTo-SecureString ((Get-AzAccessToken -ResourceUrl "https://graph.microsoft.com").Token) -AsPlainText
 
-#connect-mgGraph -AccessToken $AccessToken 
+connect-mgGraph -AccessToken $AccessToken 
 
 $headers = @{ 
 
