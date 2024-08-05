@@ -6,7 +6,7 @@ param($Timer)
 #Connect-AzAccount -Identity -Environment 'AzureCloud' 
 
 #$AccessToken = ConvertTo-SecureString ((Get-AzAccessToken -ResourceUrl "https://graph.microsoft.com").Token) -AsPlainText
-
+throw "This is a big error"
 connect-mgGraph -AccessToken $AccessToken 
 
 $headers = @{ 
