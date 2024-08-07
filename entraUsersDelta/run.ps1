@@ -1,7 +1,7 @@
 # Input bindings are passed in via param block.
        
 param($Timer)
-#Connect-MgGraph -Identity
+Connect-MgGraph -Identity
 
 #Connect-AzAccount -Identity -Environment 'AzureCloud' 
 
@@ -10,8 +10,8 @@ param($Timer)
 Write-Host $env:deltaToken
 
 $env:deltaToken = "Hello World"
-throw "This is a big error"
-connect-mgGraph -AccessToken $AccessToken 
+#throw "This is a big error"
+#connect-mgGraph -AccessToken $AccessToken 
 
 $headers = @{ 
 
